@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% block body_block %}
+<div class="container">
+  <h1>Log in</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <input type="submit" name="" class='btn btn-default' value="Log in">
+  </form>
+
+</div>
+
+
+{% endblock %}

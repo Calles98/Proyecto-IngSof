@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    {% if registered %}
+    <h1>¡Gracias por registrarse!</h1>
+    {% else %}
+      <h1>Registro</h1>
+      <h3>Llene el siguiente formulario:</h3>
+      <form class="form-group">
+        <form method="POST">
+          {% csrf_token %}
+          {{ user_form.as_p }}
+          <input type="submit" name="" class="btn btn-primary" value="Registrar">
+        </form>
+        {% endif %}
+      </form>
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}
