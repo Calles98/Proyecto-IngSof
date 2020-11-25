@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 {% extends "home/base.html" %}
 {% block body_block %}
+{% load static %}
 
-<div class="jumbotron">
-  <h1>Pagina de inicio</h1>
+<div class="contenido">
+      <ul class="lista-contenido" class= "list-group list-group-flush">
+        <li class="list-group-item list-group-item-info"><a href="#">Espacio del Químico</a></li>
+        <li class="list-group-item list-group-item-info"><a href="#">Consulta resultados de prueba Covid-19</a></li>
+        <li class="list-group-item list-group-item-info"><a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses#:~:text=sintomas">Información sobre Covid-19</a></li>
+        <li class="list-group-item list-group-item-info"><a href="https://www.unison.mx/wp-content/uploads/2020/06/Lineamientos-US-3.pdf">Lineamentos sobre regreso regreso a actividades</a></li>
+      </ul>
+</div>
+
+<div class="Bienvenida">
+  <div class="jumbotron">
+    <h1>¡Bienvenido!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
 
 </div>
 
+<div class="logo-unison">
+  <img src="{% static 'home/unison.png' %}" alt="logo unison"/>
+</div>
+
 <style>
-  h1{
-    text-align: center;
+  img{
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    margin-top: 7%;
+    width: 10%;
   }
 </style>
 
