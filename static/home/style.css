@@ -1,1 +1,42 @@
+.contenido{
+   margin-top: 10%;
+   width: 300px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   overflow-x: hidden; /* Disable horizontal scroll */
+
+   padding-top: 20px;
+   padding-left: 20px;
+}
+
+.contenido .lista-contenido{
+  border-radius: 10px;
+
+}
+
+.contenido .lista-contenido a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+
+}
+
+.Bienvenida .jumbotron{
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  position: relative;
+
+}
+
+img{
+  opacity: 0.5;
+  margin-left: 100%;
+  position: absolute;
+}
 
